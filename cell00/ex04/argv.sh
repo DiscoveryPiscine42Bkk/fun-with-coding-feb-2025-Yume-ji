@@ -1,13 +1,11 @@
 if [ $# -eq 0 ]; then
     echo "No arguments supplied"
-    exit 0
-fi
-
-count=0
-for x in "$@"; do
-    if [ $count -ge 3 ]; then
-        break
+else
+    echo "$1"
+    if [ $# -ge 2 ]; then
+        echo "$2"
     fi
-    echo $x
-    count=$((count + 1))
-    done
+    if [ $# -ge 3 ]; then
+        echo "$3"
+    fi
+fi
