@@ -1,0 +1,62 @@
+<style>
+    body {
+        margin: 0;
+    }
+
+    h1 {
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    button {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        font-weight: bold;
+    }
+
+    div {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        display: block;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>To do list</h1>
+    <button id="addnew">New</button>
+    <div id="ft_list"></div>
+
+    <script>
+        function newt() {
+            const todo = prompt("Text here : ");
+
+            if (todo && todo.trim() !== "") {
+                const newtodo = document.createElement("div");
+                newtodo.textContent = todo;
+
+                newtodo.addEventListener("click", function() {
+                    if (confirm("Remove its?")) {
+                        newtodo.remove();
+                    }
+                });
+
+                const list = document.getElementById("ft_list");
+            list.insertBefore(newtodo, list.firstChild);
+
+            }
+        }
+        
+        document.getElementById("addnew").addEventListener("click", newt);
+    </script>
+</body>
