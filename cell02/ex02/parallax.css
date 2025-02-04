@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+.top {
+    background-image: url('https://assets.unileversolutions.com/recipes-v2/121651.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-shadow: 5px 5px black;
+    background-repeat: no-repeat;
+}
+
+.mid {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-shadow: 5px 5px black;
+    background-repeat: no-repeat;
+}
+
+.bot {
+    background-image: url('https://www.shutterstock.com/image-photo/baking-ingredients-placed-on-wooden-600nw-618089717.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 5px 5px rgb(255, 255, 255);
+    background-repeat: no-repeat;
+}
