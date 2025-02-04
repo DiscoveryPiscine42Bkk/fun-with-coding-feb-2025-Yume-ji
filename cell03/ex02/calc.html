@@ -1,0 +1,99 @@
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input {
+        width: 250px;
+        height: 50px;
+    }
+
+    .first {
+        padding-right: 15px;
+    }
+
+    .second {
+        padding-left: 15px;
+    }
+
+    .result {
+        padding-right: 15px;
+    }
+    
+</style>
+
+<body>
+    <div class="first">
+        <input type="number" placeholder="Number here" min="0" id="firstnum">
+    </div>
+    <select id="oper">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <div class="second">
+        <input type="number" placeholder="Number here" min="0" id="secnum">
+    </div>
+    <div class="result">
+        <input type="button" value="Try me!" id="resu">
+    </div>
+
+    <script>
+        const fn = document.getElementById('firstnum')
+        const op = document.getElementById('oper')
+        const sn = document.getElementById('secnum')
+        const rs = document.getElementById('resu')
+
+        rs.addEventListener('click', () => {
+            const fns = parseInt(fn.value);
+            const sns = parseInt(sn.value);
+            const ops = op.value;
+
+            if (isNaN(fns) || isNaN(sns) || fns < 0 || sns < 0) {
+                alert("Error :(");
+                console.log("Error :(");
+                return;
+            }
+
+            let resul;
+            switch (ops) {
+                case '+':
+                    resul = fns + sns;
+                    break;
+                case '-':
+                    resul = fns - sns;
+                    break;
+                case '*':
+                    resul = fns * sns;
+                    break;
+                case '/':
+                    resul = fns / sns;
+                    if (sns === 0) {
+                        alert("It's over 9000!");
+                        console.log("It's over 9000!")
+                        return;
+                    }
+                    break;
+                case '%':
+                    resul = fns % sns;
+                    if (sns === 0) {
+                        alert("It's over 9000!");
+                        console.log("It's over 9000!")
+                        return;
+                    }
+                    break;
+            }
+            alert(`${resul}`);
+            console.log(`${resul}`);
+        })
+
+        setInterval(() => {
+            alert("Please, use me...");
+            console.log = "Please, use me...";
+        }, 30000);
+    </script>
+</body>
