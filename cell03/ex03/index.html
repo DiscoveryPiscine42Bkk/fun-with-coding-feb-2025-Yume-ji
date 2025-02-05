@@ -56,6 +56,15 @@
 
             }
         }
+
+        function scookie() {
+            const todos = [];
+            const listItems = document.getElementById("ft_list").children;
+            for (let i = 0; i < listItems.length; i++) {
+                todos.push(listItems[i].textContent);
+            }
+            document.cookie = "todos=" + JSON.stringify(todos) + "; path=/; max-age=86400";
+        }
         
         document.getElementById("addnew").addEventListener("click", newt);
     </script>
