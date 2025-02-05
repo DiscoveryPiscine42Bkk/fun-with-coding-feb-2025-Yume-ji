@@ -73,8 +73,8 @@
         function lcookie() {
             const cookies = document.cookie.split("; ");
             for (let i = 0; i < cookies.length; i++) {
-                const cookiee = cookies[i].split("=");
-                if (cookiee[0] === "todos") {
+                const cookie = cookies[i].split("=");
+                if (cookie[0] === "todos") {
                     const todos = JSON.parse(cookie[1]);
                     console.log("Loaded:", todos);
                     for (let i = 0; i < todos.length; i++) {
