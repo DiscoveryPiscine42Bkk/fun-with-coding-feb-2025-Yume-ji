@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #navbar {
     height: 100%;
     width: 0;

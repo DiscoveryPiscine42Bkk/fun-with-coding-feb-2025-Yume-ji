@@ -1,4 +1,5 @@
-body {
+
+border-radbody {
     margin: 0;
     padding: 0;
 }
@@ -18,6 +19,7 @@ img {
     margin-right: auto;
     padding-top: 20px;
     padding-bottom: 12px;
+    border-radius: 10%;
 }
 
 #name {
