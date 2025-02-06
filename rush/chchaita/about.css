@@ -6,27 +6,29 @@ body {
 #about {
     margin: 0;
     font-family: Garamond, serif;
-    background-image: url('https://www.pixelstalk.net/wp-content/uploads/images7/Blue-Flower-Background-HD-Free-download.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-position: center;
     width: 100%;
     height: 750px;
+}
+
+img {
+    width: 390px;
+    height: 526px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 12px;
 }
 
 #name {
     font-size: 50px;
     text-align: center;
     font-weight: bold;
-    color: white;
-    text-shadow: 4px 4px 6px rgb(4, 39, 155);
-    padding-top: 600px;
+    color: black;
 }
 
 #job {
     font-size: 20px;
     text-align: center;
-    color: white;
-    text-shadow: 4px 4px 6px rgb(4, 39, 155);
+    color: black;
 }

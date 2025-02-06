@@ -47,6 +47,7 @@
     width: 30px;
     position: fixed;
     background-color: white;
+    box-shadow: 5px 5px 18px #d1d1d1;
 }
 
 #menu:hover {
