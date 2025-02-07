@@ -1,9 +1,9 @@
 #exp {
     font-family: Garamond, serif;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding-left: 60px;
     padding-top: 25px;
-    background-color: rgb(92, 109, 204);
+    background-color: rgb(255, 255, 255);
     background-size: cover;
     padding-bottom: 25px;
 }
