@@ -1,0 +1,22 @@
+#exp {
+    font-family: Garamond, serif;
+    color: rgb(255, 255, 255);
+    padding-left: 60px;
+    padding-top: 25px;
+    background-color: rgb(92, 109, 204);
+    background-size: cover;
+    padding-bottom: 25px;
+}
+
+#exptopic {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#expdes {
+    font-size: 25px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}

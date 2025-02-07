@@ -1,0 +1,21 @@
+#cont {
+    font-family: Garamond, serif;
+    color: rgb(0, 0, 0);
+    padding-top: 50px;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#contracttopic {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#contracttext {
+    font-size: 25px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
